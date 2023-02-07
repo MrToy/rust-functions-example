@@ -869,9 +869,9 @@ dependencies = [
 [[package]]
 name = "lambda-web"
 version = "0.2.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ea6277b60649250d681654162b7e8e875c938295ea5f883eb9a8da7e27d2c051"
+source = "git+https://github.com/MrToy/lambda-web#64a854c69503b7ad95e392e58338c2612f8e9ffb"
 dependencies = [
+ "aws_lambda_events",
  "base64 0.13.1",
  "brotli",
  "lambda_runtime",

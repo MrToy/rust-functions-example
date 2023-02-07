@@ -13,4 +13,4 @@ log = "0.4.14"
 simple_logger = "4.0.0"
 tokio = "1.6.1"
 rocket = { version = "0.5.0-rc.2", default-features = false, features = ["json"] }
-lambda-web = { version = "0.2.1", features=["rocket05"] }
+lambda-web = { git = "https://github.com/MrToy/lambda-web", features=["rocket05"] }
