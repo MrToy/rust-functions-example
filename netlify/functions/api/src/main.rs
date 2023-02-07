@@ -1,14 +1,10 @@
-use rocket::{self, get, routes};
+use rocket::{self};
 use lambda_web::{is_running_on_lambda, launch_rocket_on_lambda, LambdaError};
-
-#[get("/")]
-fn hello() -> String {
-    format!("Hello!")
-}
+use project;
 
 #[rocket::main]
 async fn main() -> Result<(), LambdaError> {
-    let rocket = rocket::build().mount("/api", routes![hello]);
+    let rocket = project::app();
     if is_running_on_lambda() {
         // Launch on AWS Lambda
         launch_rocket_on_lambda(rocket).await?;

@@ -9,7 +9,7 @@ fn index() -> &'static str {
 }
 
 #[launch]
-pub fn rocket() -> _ {        
+pub fn app() -> _ {        
     rocket::build()
-        .mount("/", routes![index])
+        .mount("/api", routes![index])
 }
