@@ -869,7 +869,7 @@ dependencies = [
 [[package]]
 name = "lambda-web"
 version = "0.2.1"
-source = "git+https://github.com/MrToy/lambda-web#64a854c69503b7ad95e392e58338c2612f8e9ffb"
+source = "git+https://github.com/MrToy/lambda-web#2bcbf716ebcc276961ccc9a55836a1d81f801f43"
 dependencies = [
  "aws_lambda_events",
  "base64 0.13.1",
