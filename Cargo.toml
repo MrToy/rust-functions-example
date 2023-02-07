@@ -1,0 +1,10 @@
+[package]
+edition = "2018"
+name = "server"
+version = "0.1.0"
+
+[workspace]
+members = ["netlify/functions/*"]
+
+[dependencies]
+rocket = { version = "0.5.0-rc.2", default-features = false, features = ["json"] }
